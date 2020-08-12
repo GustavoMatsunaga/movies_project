@@ -1,0 +1,88 @@
+#landing-page {
+    background-color: var(--color-background);
+}
+
+main {
+    background-color: var(--color-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container {
+    width: 90vw;
+    max-width: 940px;
+}
+
+main .profile-info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin: 5rem auto;
+}
+
+main .description-profile {
+    width: 60%;
+}
+
+main .landing-img {
+    border-radius: 4rem;
+    width: 40%;
+    margin-right: 4rem;
+}
+
+main .profile-info h1 {
+    font-size:  6rem;
+    border-bottom: 1px solid var(--color-primary-lighter);
+    color: var(--color-secondary-dark)
+}
+
+main .profile-info h2 {
+    font-size: 3rem;
+    line-height: 4rem;
+    margin-top: 1.5rem;
+    color: var(--color-button-text);
+}
+
+main .profile-info h2 img {
+    width: 2.1rem;
+    margin-right: 0.5rem;
+}
+
+main .profile-info p {
+    margin-left: 3rem;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: var(--color-title-in-primary);
+}
+
+main .tecnologies {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 1rem;
+}
+
+main .tecnologies h3 {
+    font-size: 2rem;
+    text-align: center;
+    color: var(--color)
+}
+
+main .tecnologies img {
+    width: 4rem;
+}
+
+
+@media (max-width: 700px) {
+    :root {
+        font-size: 30%;
+    }
+
+    main .profile-info {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }

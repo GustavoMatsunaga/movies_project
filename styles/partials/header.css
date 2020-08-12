@@ -1,0 +1,13 @@
+header {
+    background: linear-gradient(var(--color-primary-darker), var(--color-secondary));
+    text-align: center;
+    padding: 3.6rem;
+    border-bottom: 1px solid #000;
+}
+
+header a {
+    font-size: 2.4rem;
+    text-decoration: none;
+    color: var(--color-title-in-primary);
+    margin: 1.2rem;
+}

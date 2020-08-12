@@ -1,0 +1,15 @@
+footer {
+    background: linear-gradient(var(--color-secondary), var(--color-primary-darker));
+    height: 30%;
+    margin: -12rem 0 0 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+footer a {
+    margin-right: 6rem;
+    margin-top: 12rem;
+}
