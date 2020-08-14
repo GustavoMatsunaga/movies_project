@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% block head %}
+    <title>Matsu || Trailers</title>
+    {% endblock %}
+
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/partials/header.css">
+    <link rel="stylesheet" href="styles/partials/footer.css">
+    {% block css %}
+    {% endblock %}
+</head>
+<body>
+    <header>
+        <a href="/">About</a>
+        <a href="/trailers">Trailers</a>
+    </header>
+        {% block content %}
+        {% endblock %}
+    <footer>
+        <a target="_blank" href="{{socialMedia.linkedin}}"><img src="img/linkedin.png" alt="Linkedin"></a>
+        <a target="_blank" href="{{socialMedia.github}}"><img src="img/github.png" alt="github"></a>
+        <a target="_blank" href="{{socialMedia.stackOverFlow}}"><img src="img/stackoverflow.png" alt="Stack over flow"></a>
+    </footer>
+    {% block scripts %}
+    {% endblock %}
+</body>
+</html>
