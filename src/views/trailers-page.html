@@ -1,0 +1,52 @@
+    {% extends "layout.html" %}
+
+    {% block head %}
+    <title>Matsu || Trailers</title>
+    {% endblock %}
+    
+    {% block css %}
+    <link rel="stylesheet" href="styles/partials/trailers-page.css">
+    {% endblock %}
+
+    {% block content %}
+    <main>
+        <div id="container">
+            <h1>Trailers</h1>
+            <section class="trailers">
+                {% for trailer in trailers %}
+                <div class="trailer {{ 'featured-wrapper' if trailer.featured}}" id="{{trailer.id}}">
+                    {% if trailer.featured %}
+                    <div id="featured">NEW</div>
+                    {% endif %}
+                    <div class="trailer-img">
+                        <img src="https://img.youtube.com/vi/{{trailer.id}}/maxresdefault.jpg" alt="Image of {{trailer.title}}">
+                    </div>
+                    <div class="trailer-title">
+                        <h2 class="trailer-title">{{trailer.title}}</h2>
+                        <p class="trailer-resume">{{trailer.resume}}</p>
+                    </div>
+                    <div class="trailer-info">
+                        <p class="trailer-release-date">Release date : {{trailer.date}}</p>
+                        <p class="trailer-release-year">Release year : {{trailer.year}}</p>
+                        <p class="trailer-duration">Runing time: {{trailer.duration}}</p>
+                        <p class="trailer-director">Directed by : {{trailer.director}}</p>
+                        <p class="trailer-producer">Produced by: {{trailer.producer}}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </section>
+            <div class="modal-overlay">
+                <div class="modal">
+                    <img class="close-image" src="img/x-icon.png" alt="X icon">
+                    <div class="modal-iframe">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/lfqHb6INj3w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    {% endblock %}
+
+    {% block scripts %}
+    <script src="scripts/main.js"></script>
+    {% endblock %}

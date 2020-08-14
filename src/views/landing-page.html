@@ -1,0 +1,51 @@
+    {% extends "layout.html" %}
+
+    {% block head %}
+    <title>Matsu || Trailers</title>
+    {% endblock %}
+
+    {% block css %}
+    <link rel="stylesheet" href="styles/partials/landing-page.css">
+    {% endblock %}
+    
+    {% block content %}
+    <main>
+        <div id="container">
+            <div class="profile-info">
+                <img class="landing-img" src="https://avatars2.githubusercontent.com/u/63619508?s=460&u=b20d901a7d4129e5ae8832b6e2451f98566d32bf&v=4" alt="Gustavo Matsunaga">
+                <div class="description-profile">
+                    <h1>{{about.name}}</h1>
+                    <h2><img src="img/tools.png">{{about.career}}</h2>
+                    <p>{{about.careerInfo}}</p>
+                    <h2><img src="img/about-icon.png">About</h2>
+                    <p>{{about.aboutInfo}} </p>
+                    <h2><img src="img/fact-person.png">One fact</h2>
+                    <p>{{about.oneFact}}</p>
+                    <h2><img src="/img/icons8-código-fonte-64.png" alt="">Tecnologies</h2>
+                    <div class="tecnologies">
+                        <div class="tecnologies-box">
+                            <h3>Learning</h3>
+                            <img src="img/react-native.png" alt="react-native">
+                            <img src="img/node-js.png" alt="NodeJS">
+                            <img src="img/typescript.png" alt="Typescript">
+                        </div>
+                        <div class="tecnologies-box">
+                            <h3>Experienced</h3>
+                            <img src="img/html.png" alt="HTML5">
+                            <img src="img/CSS3.png" alt="CSS3">
+                            <img src="img/javascript.png" alt="Javascript">
+                            <img src="img/sql.png" alt="SQL">
+                            <img src="img/nunjucks.png" alt="Nunjucks">
+                        </div>
+                        <div class="tecnologies-box">
+                            <h3>Interest</h3>
+                            <img src="img/python.png" alt="python">
+                            <img src="img/jest-icon.png" alt="Jest">
+                            <img src="img/ruby-on-rails.png" alt="Ruby on Rails">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    {% endblock %}
