@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="#-Tecnologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-Project">Project</a>&nbsp;&nbsp;&nbsp;
+  <a href="#spades-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#heart-project">Project</a>&nbsp;&nbsp;&nbsp;
 </p>
 
 <br>
