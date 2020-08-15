@@ -1,9 +1,10 @@
 footer {
     background: linear-gradient(var(--color-secondary), var(--color-primary-darker));
-    height: 30%;
+    height: 50vh;
     margin: -12rem 0 0 0;
 
     display: flex;
+    flex: 1;
     align-items: center;
     justify-content: center;
 
